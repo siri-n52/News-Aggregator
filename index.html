@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Hub | Your Daily Brief</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>News Hub</h1>
+        <nav>
+            <ul>
+                <li><a href="#" data-category="general">Headlines</a></li>
+                <li><a href="#" data-category="technology">Technology</a></li>
+                <li><a href="#" data-category="sports">Sports</a></li>
+                <li><a href="#" data-category="business">Business</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="news-content">
+            <h2 id="news-category-title">Latest Headlines</h2>
+            <div id="articles-container">
+                <!-- News articles will be loaded here by JavaScript -->
+                <p id="loading-indicator">Loading news...</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2023 News Hub. All rights reserved.</p>
+        <p>Powered by <a href="https://newsapi.org" target="_blank" rel="noopener noreferrer">NewsAPI.org</a></p>
+    </footer>
+
+    <!-- Chatbot Elements -->
+    <div id="chatbot-container">
+        <div id="chatbot-header">
+            <span>News Assistant</span>
+            <button id="chatbot-close">×</button>
+        </div>
+        <div id="chatbot-messages">
+            <div class="bot-message">Hello! How can I help you with the news today?</div>
+        </div>
+        <div id="chatbot-input-area">
+            <input type="text" id="chatbot-input" placeholder="Ask me about news...">
+            <button id="chatbot-send">Send</button>
+        </div>
+    </div>
+
+    <button id="chatbot-toggle">Chat</button>
+
+    <script src="script3.js"></script>
+</body>
+</html>
